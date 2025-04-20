@@ -1,12 +1,12 @@
 type User {
-  name: String!
-  email: String!
+    name: String!
+    email: String!
 }
 
 type Query {
-  user: User
+    user: User
 }
 
 type Mutation {
-  register(name: String!, email: String!, password: String!): User
+    register(name: String!, email: String!, password: String!): User
 }
