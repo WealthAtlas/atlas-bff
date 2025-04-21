@@ -1,0 +1,12 @@
+type Auth {
+    token: String!
+}
+
+type Query {
+    _placeholder: String
+}
+
+type Mutation {
+    registerUser(name: String!, email: String!, password: String!): Boolean
+    loginUser(email: String!, password: String!): Auth
+}
